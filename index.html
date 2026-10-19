@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Compras</h1>
+    </header>
+    <section>
+            <table>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Produto</th>
+                    <th>Preço Unitario</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="txtq1""></td>
+                    <td><input type="text" id="txtprod1"></td>
+                    <td><input type="number" id="txtp1"></td>
+                    <td id="total1"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="txtq2""></td>
+                    <td><input type="text" id="txtprod2"></td>
+                    <td><input type="number" id="txtp2"></td>
+                    <td id="total2"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="txtq3""></td>
+                    <td><input type="text" id="txtprod3"></td>
+                    <td><input type="number" id="txtp3"></td>
+                    <td id="total3"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL DA COMPRA</td>
+                    <td id="tCompra"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>MEDIA POR PRODUTO</td>
+                    <td id="mProduto"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>MEDIA INT POR PRODUTO</td>
+                    <td id="mInt"></td>
+                </tr>
+            </table>
+            <div class="botoes">
+                <button onclick="calcular()">Calcular</button>
+                <button onclick="limpar()">Limpar</button>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
